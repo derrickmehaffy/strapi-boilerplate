@@ -6,7 +6,7 @@
   "scripts": {
     "develop": "strapi develop",
     "watch": "strapi develop --watch-admin",
-    "start": "source ~/.nvm/nvm.sh; nvm use 16.13.0 && NODE_ENV=production strapi start",
+    "start": "NODE_ENV=production strapi start",
     "build": "NODE_ENV=production strapi build",
     "strapi": "strapi",
     "postinstall": "patch-package"
