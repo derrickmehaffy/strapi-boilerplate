@@ -5,4 +5,9 @@ module.exports = ({ env }) => ({
     auth: {
         secret: env("ADMIN_JWT_SECRET", "643bb60958200c3451b23bb9ed043dd8"),
     },
+    transfer: {
+        token: {
+            salt: env('TRANSFER_TOKEN_SALT', "643bb60958200c3451b23bb9ed043dd8"),
+        },
+    },
 });
