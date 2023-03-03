@@ -102,9 +102,6 @@ module.exports = ({ env }) => ({
     "content-versioning": {
         enabled: true,
     },
-    "email-designer": {
-        enabled: true,
-    },
     seo: {
         enabled: true,
     },
