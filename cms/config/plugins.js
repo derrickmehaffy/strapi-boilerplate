@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
     slugify: {
-        enabled: true,
+        enabled: false,
         config: {
             contentTypes: {
                 article: {
@@ -35,16 +35,6 @@ module.exports = ({ env }) => ({
         settings: {
             defaultFrom: "no-reply@boilerplate.sk",
             defaultReplyTo: "no-reply@boilerplate.sk",
-        },
-    },
-    transformer: {
-        enabled: true,
-        config: {
-            prefix: "/api/",
-            responseTransforms: {
-                removeAttributesKey: true,
-                removeDataKey: true,
-            },
         },
     },
     "preview-button": {
@@ -114,9 +104,6 @@ module.exports = ({ env }) => ({
     },
     "email-designer": {
         enabled: true,
-    },
-    navigation: {
-        enabled: false,
     },
     seo: {
         enabled: true,
